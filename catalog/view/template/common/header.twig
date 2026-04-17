@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html dir="{{ direction }}" lang="{{ lang }}">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ title }}</title>
+  <base href="{{ base }}"/>
+  {% if description %}
+    <meta name="description" content="{{ description }}"/>
+  {% endif %}
+  {% if keywords %}
+    <meta name="keywords" content="{{ keywords }}"/>
+  {% endif %}
+  <script src="{{ jquery }}" type="text/javascript"></script>
+  <link href="{{ bootstrap }}" type="text/css" rel="stylesheet" media="screen"/>
+  <link href="{{ icons }}" rel="stylesheet" type="text/css"/>
+  <link href="{{ stylesheet }}" type="text/css" rel="stylesheet"/>
+  <script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+  {% if icon %}
+    <link rel="icon" href="{{ icon }}" type="image/png">
+  {% endif %}
+  {% for style in styles %}
+    <link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}"/>
+  {% endfor %}
+  {% for script in scripts %}
+    <script src="{{ script.href }}" type="text/javascript"></script>
+  {% endfor %}
+  {% for link in links %}
+    <link href="{{ link.href }}" rel="{{ link.rel }}"/>
+  {% endfor %}
+  {% for analytic in analytics %}
+    {{ analytic }}
+  {% endfor %}  
+</head>
+<body>
+<div id="container">
+  <div id="alert"></div>
+  <!-- INFO BAR -->
+<div class="top-info-bar">
+
+<div class="container-fluid">
+
+<div class="row align-items-center">
+
+<div class="col-md-6">
+
+<div class="info-text">
+Discover handmade treasures, curated and crafted with care for your home, heart, and dreams.
+</div>
+
+</div>
+
+<div class="col-md-6 text-end">
+
+<ul class="info-links-list" style="list-style: none; padding: 0; margin: 0; display: flex; gap: 30px;">
+        
+<li><a href="#" onclick="openSidebar('aboutSidebar')">About Us</a></li>
+
+<li>
+<a href="index.php?route=information/journal">
+    Journal
+  </a>
+  </li>
+
+<li><a href="#" onclick="openSidebar('exhibitionSidebar')">Exhibitions</a></li>
+
+<li><a href="https://www.faire.com/direct/craftboat?signUp=direct" target="_blank">Wholesale</a></li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+  <header class="main-header">
+<div class="container-fluid">
+
+<div class="header-flex">
+
+<!-- LEFT LOGO -->
+<div class="logo-area">
+<a href="{{ home }}">
+<img src="{{ base }}admin/view/image/Anaar-Logo-A.webp" alt="Seeds of Anaar">
+</a>
+</div>
+
+<!-- SHOP DROPDOWN -->
+<div class="shop-wrapper">
+<button class="shop-btn" id="shopToggle">
+<i class="fa fa-shopping-bag"></i> SHOP
+<i class="fa fa-chevron-down"></i>
+</button>
+
+<div class="shop-dropdown" id="shopMenu">
+
+<div class="dropdown-col">
+<div class="dropdown-img"></div>
+<h4>CATEGORIES</h4>
+<a href="#">All</a>
+<a href="#">Tableware</a>
+<a href="#">Bath & Bed</a>
+<a href="#">Kitchen</a>
+<a href="#">Decor</a>
+<a href="#">Clothing</a>
+</div>
+
+<div class="dropdown-col">
+<div class="dropdown-img"></div>
+<h4>CAUSE</h4>
+<a href="#">Small Batch Craft</a>
+<a href="#">Reimagined Materials</a>
+<a href="#">Naturally Dyed</a>
+</div>
+
+<div class="dropdown-col">
+<div class="dropdown-img"></div>
+<h4>MOOD</h4>
+<a href="#">Earth & Clay</a>
+<a href="#">Coastal Calm</a>
+<a href="#">Modern</a>
+</div>
+
+</div>
+</div>
+
+<div class="search-wrapper">
+    
+    <img src="https://cdn.shopify.com/s/files/1/0858/1509/9671/files/noun-search-7848901_2.png?v=1751396098" class="search-icon">
+
+    <input 
+        type="search" 
+        name="q" 
+        id="searchInput1"
+        class="search-input"
+        placeholder="Search"
+    >
+
+</div>
+<!-- ICONS -->
+<div class="header-icons">
+
+<a href="{{ account }}">
+<img class="" src="https://cdn.shopify.com/s/files/1/0858/1509/9671/files/Group_1.png?v=1751452048" width="26" height="28">
+</a>
+<a href="{{ wishlist }}"> 
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 24 24" fill="none" overflow="unset" class="icon">
+            <path d="M12.4869 22C12.2364 21.9968 11.9918 21.9232 11.7804 21.7875C8.18822 19.57 5.48518 17.3766 3.2783 14.8705C2.01853 13.5287 1.04215 11.942 0.408559 10.207C-0.730606 6.84675 0.5832 2.9211 3.46882 1.07256C4.78425 0.221399 6.35422 -0.134962 7.90363 0.0659208C9.45304 0.266804 10.8831 1.01212 11.9431 2.17126C12.1376 2.37977 12.3162 2.60031 12.4869 2.81685C12.7194 2.51694 12.97 2.2317 13.2371 1.96275C13.8816 1.32075 14.6473 0.816306 15.4888 0.479444C16.3303 0.142583 17.2302 -0.0198119 18.1351 0.00192686C19.0214 0.0266866 19.8936 0.23235 20.6992 0.606539C21.5048 0.980728 22.2271 1.51571 22.8227 2.17928C25.0693 4.63732 25.6012 7.62065 24.3072 10.8045C23.6255 12.404 22.6611 13.8647 21.4613 15.1151C19.3548 17.3836 16.9713 19.3724 14.3683 21.0336C14.019 21.2662 13.6578 21.4907 13.3006 21.7113L13.1934 21.7795C12.9825 21.9174 12.738 21.9937 12.4869 22Z" stroke-width="1.7" stroke="currentColor"></path>
+          </svg>
+
+</a>
+
+<a href="javascript:void(0)" onclick="openSidebar('cartSidebar')">
+<svg aria-hidden="true" fill="none" focusable="false" width="32" class="header__nav-icon icon icon-cart" viewBox="0 0 24 24"><path d="M19.8757 5.24613C19.7647 5.10391 19.5943 5.02078 19.4139 5.02078H4.80903C4.68629 4.52985 4.47872 3.69946 4.27356 2.87924C3.84981 1.18401 2.33342 0 0.585933 0C0.262342 0 0 0.262342 0 0.585933C0 0.909524 0.262342 1.17187 0.585933 1.17187C1.79467 1.17187 2.84357 1.9908 3.13669 3.16349L5.2498 11.6163C5.41062 12.2595 5.78663 12.8017 6.28937 13.1752C5.28422 14.1306 5.50922 15.8793 6.703 16.5587C5.64503 17.9425 6.67464 20.0161 8.43099 19.9998C10.0195 20.0213 11.0921 18.2569 10.3476 16.8618H13.4179C12.6736 18.2571 13.7458 20.0213 15.3346 19.9998C18.1893 19.8916 18.1887 15.7979 15.3345 15.69H7.80334C6.50065 15.6404 6.50163 13.7729 7.80334 13.7238H15.8162C17.0954 13.7238 18.2054 12.8572 18.5156 11.6162L19.9823 5.74878C20.0261 5.57378 19.9868 5.38832 19.8757 5.24613ZM15.3345 16.8619C15.8766 16.8619 16.3176 17.3029 16.3176 17.8449C16.2682 19.1473 14.4007 19.147 14.3515 17.8449C14.3515 17.3029 14.7925 16.8619 15.3345 16.8619ZM8.43095 16.8619C8.97302 16.8619 9.41403 17.3029 9.41403 17.8449C9.36462 19.1473 7.49713 19.147 7.44787 17.8449C7.44787 17.3029 7.88888 16.8619 8.43095 16.8619ZM17.3788 11.3321C17.1992 12.0503 16.5567 12.552 15.8162 12.552H7.94924C7.20877 12.552 6.56624 12.0503 6.38667 11.3321L5.10195 6.19269H18.6635L17.3788 11.3321Z" fill="#303030"></path></svg>
+</a>
+
+<!-- CURRENCY -->
+<div class="currency-box">
+<select onchange="location = this.value;">
+<option value="#">INR ₹</option>
+<option value="#">USD $</option>
+</select>
+</div>
+
+</div>
+
+</div>
+</div>
+</header>
+
+
+
+
+<!-- ABOUT SIDEBAR -->
+<div id="aboutSidebar" class="custom-sidebar">
+  <div class="sidebar-content">
+
+    <span class="close-btn" onclick="closeSidebar('aboutSidebar')">&times;</span>
+
+    <h3>WELCOME TO SEEDS OF ANAAR</h3>
+
+    <img src="admin/view/image/about1.webp" class="sidebar-img">
+
+    <p>
+      An intentional shop, curated by the team behind Craft Boat —
+      rooted in the belief that creativity, curiosity, and courage help meaningful things grow.
+    </p>
+
+    <img src="admin/view/image/about2.png" class="sidebar-img">
+
+    <div class="insta-icon">
+    <a href="https://www.instagram.com/seedsofanaar/" target="_blank">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#9b8a7a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+  <circle cx="12" cy="12" r="4"></circle>
+  <circle cx="17" cy="7" r="1.2"></circle>
+   </svg>
+   </a>
+     </div>
+
+  </div>
+</div>
+
+<div id="exhibitionSidebar" class="custom-sidebar">
+  <div class="sidebar-content">
+
+    <span class="close-btn" onclick="closeSidebar('exhibitionSidebar')">&times;</span>
+
+    <h3>EXHIBITION</h3>
+
+    <img src="admin/view/image/exhibition1.jpg" class="sidebar-img">
+
+    <p>
+      As part of this journey, we host workshops and exhibitions aligned with our vision.
+    </p>
+
+    <p><b>Upcoming Exhibition</b></p>
+    <p>Shoppe Object — New York</p>
+    <p>August 3 – 5, 2025</p>
+
+     <img src="admin/view/image/exhibition2.jpg" class="sidebar-img">
+
+    <div class="insta-icon">
+    <a href="https://www.instagram.com/seedsofanaar/" target="_blank">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#9b8a7a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+  <circle cx="12" cy="12" r="4"></circle>
+  <circle cx="17" cy="7" r="1.2"></circle>
+   </svg>
+   </a>
+     </div>
+
+  </div>
+</div>
+<div id="overlay" onclick="closeAllSidebars()"></div>
+
+<script>
+
+// SHOP DROPDOWN (smooth hover)
+const shopWrapper = document.querySelector(".shop-wrapper");
+
+shopWrapper.addEventListener("mouseenter", () => {
+  document.getElementById("shopMenu").classList.add("show");
+});
+
+shopWrapper.addEventListener("mouseleave", () => {
+  document.getElementById("shopMenu").classList.remove("show");
+});
+
+// SIDEBARS
+function openSidebar(id) {
+  document.getElementById(id).classList.add("active");
+  document.getElementById("overlay").classList.add("active");
+}
+
+function closeSidebar(id) {
+  document.getElementById(id).classList.remove("active");
+  document.getElementById("overlay").classList.remove("active");
+}
+
+function closeAllSidebars() {
+  document.querySelectorAll(".custom-sidebar").forEach(el => {
+    el.classList.remove("active");
+  });
+  document.getElementById("overlay").classList.remove("active");
+}
+
+// ESC KEY CLOSE
+document.addEventListener("keydown", function(e){
+  if(e.key === "Escape") closeAllSidebars();
+});
+
+</script>
+</body>

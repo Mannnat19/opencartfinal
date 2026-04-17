@@ -1,0 +1,373 @@
+2026-04-17 07:42:21 - Error: Error: Could not make a database link using root@localhost!<br/>Message: No connection could be made because the target machine actively refused it
+File: C:\xampp\htdocs\opencartfinal\system\library\db\mysqli.php
+Line: 86
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencartfinal\system\library\db.php
+Line: 40
+Class: Opencart\System\Library\DB\MySQLi
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\opencartfinal\system\framework.php
+Line: 148
+Class: Opencart\System\Library\DB
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencartfinal\admin\index.php
+Line: 20
+Function: require_once
+2026-04-17 07:42:21 - Error: Error: Could not make a database link using root@localhost!<br/>Message: No connection could be made because the target machine actively refused it
+File: C:\xampp\htdocs\opencartfinal\system\library\db\mysqli.php
+Line: 86
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencartfinal\system\library\db.php
+Line: 40
+Class: Opencart\System\Library\DB\MySQLi
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\opencartfinal\system\framework.php
+Line: 148
+Class: Opencart\System\Library\DB
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencartfinal\admin\index.php
+Line: 20
+Function: require_once
+2026-04-17 07:42:55 - Error: Error: Could not make a database link using root@localhost!<br/>Message: No connection could be made because the target machine actively refused it
+File: C:\xampp\htdocs\opencartfinal\system\library\db\mysqli.php
+Line: 86
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencartfinal\system\library\db.php
+Line: 40
+Class: Opencart\System\Library\DB\MySQLi
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\opencartfinal\system\framework.php
+Line: 148
+Class: Opencart\System\Library\DB
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencartfinal\admin\index.php
+Line: 20
+Function: require_once
+2026-04-17 07:43:02 - Error: Error: Could not make a database link using root@localhost!<br/>Message: No connection could be made because the target machine actively refused it
+File: C:\xampp\htdocs\opencartfinal\system\library\db\mysqli.php
+Line: 86
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencartfinal\system\library\db.php
+Line: 40
+Class: Opencart\System\Library\DB\MySQLi
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\opencartfinal\system\framework.php
+Line: 148
+Class: Opencart\System\Library\DB
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencartfinal\admin\index.php
+Line: 20
+Function: require_once
+2026-04-17 07:43:28 - Error: Error: Could not make a database link using root@localhost!<br/>Message: No connection could be made because the target machine actively refused it
+File: C:\xampp\htdocs\opencartfinal\system\library\db\mysqli.php
+Line: 86
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencartfinal\system\library\db.php
+Line: 40
+Class: Opencart\System\Library\DB\MySQLi
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\opencartfinal\system\framework.php
+Line: 148
+Class: Opencart\System\Library\DB
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencartfinal\admin\index.php
+Line: 20
+Function: require_once
+2026-04-17 07:43:32 - Error: Error: Could not make a database link using root@localhost!<br/>Message: No connection could be made because the target machine actively refused it
+File: C:\xampp\htdocs\opencartfinal\system\library\db\mysqli.php
+Line: 86
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencartfinal\system\library\db.php
+Line: 40
+Class: Opencart\System\Library\DB\MySQLi
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\opencartfinal\system\framework.php
+Line: 148
+Class: Opencart\System\Library\DB
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencartfinal\index.php
+Line: 20
+Function: require_once
+2026-04-17 07:43:43 - Error: Error: Could not make a database link using root@localhost!<br/>Message: No connection could be made because the target machine actively refused it
+File: C:\xampp\htdocs\opencartfinal\system\library\db\mysqli.php
+Line: 86
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencartfinal\system\library\db.php
+Line: 40
+Class: Opencart\System\Library\DB\MySQLi
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\opencartfinal\system\framework.php
+Line: 148
+Class: Opencart\System\Library\DB
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencartfinal\admin\index.php
+Line: 20
+Function: require_once
+2026-04-17 07:44:07 - Error: Error: Could not make a database link using root@localhost!<br/>Message: No connection could be made because the target machine actively refused it
+File: C:\xampp\htdocs\opencartfinal\system\library\db\mysqli.php
+Line: 86
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencartfinal\system\library\db.php
+Line: 40
+Class: Opencart\System\Library\DB\MySQLi
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\opencartfinal\system\framework.php
+Line: 148
+Class: Opencart\System\Library\DB
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencartfinal\index.php
+Line: 20
+Function: require_once
+2026-04-17 07:44:08 - Error: Error: Could not make a database link using root@localhost!<br/>Message: No connection could be made because the target machine actively refused it
+File: C:\xampp\htdocs\opencartfinal\system\library\db\mysqli.php
+Line: 86
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencartfinal\system\library\db.php
+Line: 40
+Class: Opencart\System\Library\DB\MySQLi
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\opencartfinal\system\framework.php
+Line: 148
+Class: Opencart\System\Library\DB
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencartfinal\index.php
+Line: 20
+Function: require_once
+2026-04-17 07:44:08 - Error: Error: Could not make a database link using root@localhost!<br/>Message: No connection could be made because the target machine actively refused it
+File: C:\xampp\htdocs\opencartfinal\system\library\db\mysqli.php
+Line: 86
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencartfinal\system\library\db.php
+Line: 40
+Class: Opencart\System\Library\DB\MySQLi
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\opencartfinal\system\framework.php
+Line: 148
+Class: Opencart\System\Library\DB
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencartfinal\index.php
+Line: 20
+Function: require_once
+2026-04-17 07:44:24 - Error: Error: Could not make a database link using root@localhost!<br/>Message: No connection could be made because the target machine actively refused it
+File: C:\xampp\htdocs\opencartfinal\system\library\db\mysqli.php
+Line: 86
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencartfinal\system\library\db.php
+Line: 40
+Class: Opencart\System\Library\DB\MySQLi
+Function: __construct
+
+Backtrace: 1
+File: C:\xampp\htdocs\opencartfinal\system\framework.php
+Line: 148
+Class: Opencart\System\Library\DB
+Function: __construct
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencartfinal\index.php
+Line: 20
+Function: require_once
+2026-04-17 11:38:30 - PHP Warning:  Undefined array key "file" in C:\xampp\htdocs\opencartfinal\catalog\controller\startup\error.php on line 78
+2026-04-17 11:38:30 - PHP Warning:  Undefined array key "line" in C:\xampp\htdocs\opencartfinal\catalog\controller\startup\error.php on line 79
+2026-04-17 11:38:30 - Error: syntax error, unexpected token "public", expecting end of file
+File: C:\xampp\htdocs\opencartfinal\catalog\controller\common\footer.php
+Line: 93
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencartfinal\system\engine\autoloader.php
+Line: 26
+Class: Opencart\System\Engine\Autoloader
+Function: load
+
+Backtrace: 1
+File: 
+Line: 
+Class: Opencart\System\Engine\Autoloader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencartfinal\system\engine\factory.php
+Line: 44
+Function: class_exists
+
+Backtrace: 3
+File: C:\xampp\htdocs\opencartfinal\system\engine\loader.php
+Line: 94
+Class: Opencart\System\Engine\Factory
+Function: controller
+
+Backtrace: 4
+File: C:\xampp\htdocs\opencartfinal\catalog\controller\common\home.php
+Line: 30
+Class: Opencart\System\Engine\Loader
+Function: controller
+
+Backtrace: 5
+File: C:\xampp\htdocs\opencartfinal\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Common\Home
+Function: index
+
+Backtrace: 6
+File: C:\xampp\htdocs\opencartfinal\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 7
+File: C:\xampp\htdocs\opencartfinal\index.php
+Line: 20
+Function: require_once
+2026-04-17 11:38:39 - PHP Warning:  Undefined array key "file" in C:\xampp\htdocs\opencartfinal\catalog\controller\startup\error.php on line 78
+2026-04-17 11:38:39 - PHP Warning:  Undefined array key "line" in C:\xampp\htdocs\opencartfinal\catalog\controller\startup\error.php on line 79
+2026-04-17 11:38:39 - Error: syntax error, unexpected token "public", expecting end of file
+File: C:\xampp\htdocs\opencartfinal\catalog\controller\common\footer.php
+Line: 93
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencartfinal\system\engine\autoloader.php
+Line: 26
+Class: Opencart\System\Engine\Autoloader
+Function: load
+
+Backtrace: 1
+File: 
+Line: 
+Class: Opencart\System\Engine\Autoloader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencartfinal\system\engine\factory.php
+Line: 44
+Function: class_exists
+
+Backtrace: 3
+File: C:\xampp\htdocs\opencartfinal\system\engine\loader.php
+Line: 94
+Class: Opencart\System\Engine\Factory
+Function: controller
+
+Backtrace: 4
+File: C:\xampp\htdocs\opencartfinal\catalog\controller\common\home.php
+Line: 30
+Class: Opencart\System\Engine\Loader
+Function: controller
+
+Backtrace: 5
+File: C:\xampp\htdocs\opencartfinal\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Common\Home
+Function: index
+
+Backtrace: 6
+File: C:\xampp\htdocs\opencartfinal\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 7
+File: C:\xampp\htdocs\opencartfinal\index.php
+Line: 20
+Function: require_once
+2026-04-17 11:38:40 - PHP Warning:  Undefined array key "file" in C:\xampp\htdocs\opencartfinal\catalog\controller\startup\error.php on line 78
+2026-04-17 11:38:40 - PHP Warning:  Undefined array key "line" in C:\xampp\htdocs\opencartfinal\catalog\controller\startup\error.php on line 79
+2026-04-17 11:38:40 - Error: syntax error, unexpected token "public", expecting end of file
+File: C:\xampp\htdocs\opencartfinal\catalog\controller\common\footer.php
+Line: 93
+
+Backtrace: 0
+File: C:\xampp\htdocs\opencartfinal\system\engine\autoloader.php
+Line: 26
+Class: Opencart\System\Engine\Autoloader
+Function: load
+
+Backtrace: 1
+File: 
+Line: 
+Class: Opencart\System\Engine\Autoloader
+Function: Opencart\System\Engine\{closure}
+
+Backtrace: 2
+File: C:\xampp\htdocs\opencartfinal\system\engine\factory.php
+Line: 44
+Function: class_exists
+
+Backtrace: 3
+File: C:\xampp\htdocs\opencartfinal\system\engine\loader.php
+Line: 94
+Class: Opencart\System\Engine\Factory
+Function: controller
+
+Backtrace: 4
+File: C:\xampp\htdocs\opencartfinal\catalog\controller\common\home.php
+Line: 30
+Class: Opencart\System\Engine\Loader
+Function: controller
+
+Backtrace: 5
+File: C:\xampp\htdocs\opencartfinal\system\engine\action.php
+Line: 96
+Class: Opencart\Catalog\Controller\Common\Home
+Function: index
+
+Backtrace: 6
+File: C:\xampp\htdocs\opencartfinal\system\framework.php
+Line: 259
+Class: Opencart\System\Engine\Action
+Function: execute
+
+Backtrace: 7
+File: C:\xampp\htdocs\opencartfinal\index.php
+Line: 20
+Function: require_once
