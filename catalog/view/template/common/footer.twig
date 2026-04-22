@@ -1,0 +1,85 @@
+</main>
+<footer class="custom-footer">
+  <div class="custom-footer-inner">
+
+    <!-- LEFT: Nav Links -->
+    <nav class="footer-links">
+     <a href="index.php?route=information/information&information_id=3">Privacy Policy</a>
+      <a href="index.php?route=information/information&information_id=4">Shipping & Returns</a>
+      <a href="index.php?route=information/information&information_id=2">Terms and conditions</a>
+  <a href="{{ contact }}">Contact Us</a>
+</nav>
+
+    <!-- RIGHT: Instagram + Subscribe -->
+    <div class="footer-right">
+
+      <!-- Instagram Icon -->
+      <a href="https://www.instagram.com/seedsofanaar/"  target="_blank" class="footer-insta" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+
+      <!-- Subscribe Form -->
+      <div class="footer-subscribe-wrapper">
+        <div id="subscribe-form" class="footer-subscribe-form">
+          <input
+            type="email"
+            id="subscribe-email"
+            placeholder="E-mail"
+            autocomplete="off"
+          />
+          <button id="subscribe-btn" type="button">SUBSCRIBE</button>
+        </div>
+        <p id="subscribe-success" class="subscribe-success-msg" style="display:none;">
+          You have been subscribed to our newsletter.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+{{ cookie }}
+<script src="{{ bootstrap }}" type="text/javascript"></script>
+{% for script in scripts %}
+  <script src="{{ script.href }}" type="text/javascript"></script>
+{% endfor %}
+
+<script>
+document.getElementById('subscribe-btn').addEventListener('click', function() {
+    const email = document.getElementById('subscribe-email').value.trim();
+
+    if (!email || !email.includes('@')) {
+        document.getElementById('subscribe-email').style.border = '1px solid #c0392b';
+        return;
+    }
+
+    // Send to OpenCart newsletter controller
+    fetch('index.php?route=common/footer/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'email=' + encodeURIComponent(email)
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById('subscribe-form').style.display = 'none';
+        document.getElementById('subscribe-success').style.display = 'block';
+    })
+    .catch(() => {
+        // Even if server fails, show success to user
+        document.getElementById('subscribe-form').style.display = 'none';
+        document.getElementById('subscribe-success').style.display = 'block';
+    });
+});
+
+// Remove red border on typing
+document.getElementById('subscribe-email').addEventListener('input', function() {
+    this.style.border = '';
+});
+</script>
+
+</body>
+</html>
